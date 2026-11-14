@@ -258,3 +258,53 @@ commit `220d425`. The downloaded data matched the manifest checksums. Every
 result table matched the published one to within 2e-6, and four were
 identical. Details: `results/reproduction_second_machine.md`.
 
+## 2026-11-14: decisions on every logged choice (Paul)
+
+Paul reviewed all 27 drug choices in a written review dated 14 November
+2026, prepared with help from ChatGPT on reasoning, references and editing.
+His decisions, summarised:
+
+| # | Decision | Reason, in short |
+| --- | --- | --- |
+| D1 | Agree | Releases, licences and joins must be traceable; not interchangeable with DepMap without checking. |
+| D2 | Agree | AKT/PTEN focus; cell lines cannot show a treatment benefit in patients. |
+| D3 | Agree | Within-screen replication; a separate dataset would be stronger. |
+| D4 | Agree | AUC still depends on dose range and assay; keep its definition consistent. |
+| D5 | Agree | A genomic proxy, not a measurement of PTEN activity. |
+| D6 | Agree | Stays a sensitivity analysis; both results kept. |
+| D7 | Agree | No recorded alteration is not evidence of normal status; count exclusions. |
+| D8 | Agree | Report how many lines are affected. |
+| D9 | Agree | State the rare-tissue grouping and unseen categories; does not remove every difference. |
+| D10 | Agree | Estimates new lines from a similar tissue mix, not an unseen tissue. |
+| D11 | Keep the result; nest the filter in a follow-up | Outer test lines are excluded from the filter; inner tuning is less isolated. |
+| D12 | Agree | Describe with the D11 limit, not as fully nested. |
+| D13 | Keep, with qualified evidence | One similar score on one fold does not show equivalence; check convergence on the training side. |
+| D14 | Agree | Compares the procedures as run, not a ranking of the two methods. |
+| D15 | Keep; repeated shuffles as follow-up | One shuffle shows the effect exists, not its distribution. |
+| D16 | Agree | Random hiding is not clinical missingness; masks matched across strategies. |
+| D17 | Agree | Fit the filter and medians inside the training split; report the two kinds of gap separately. |
+| D18 | Agree | Out-of-fold predictions for the weight; expression-only fallback. |
+| D19 | Agree | Trying k = 2 to 5 does not show that groups exist. |
+| D20 | Agree | Repeating preprocessing tests the whole discovery procedure. |
+| D21 | Change the interpretation | 0.75 and 0.50 describe, they do not show groups exist; the null comparison matters more. |
+| D22 | Agree | Conclusions conditional on the reference; more than one draw. |
+| D23 | Keep for description | A held-constant adjustment does not test its own uncertainty; refitting is a sensitivity analysis. |
+| D24 | Agree | Exploratory; not causal or clinical evidence. |
+| D25 | Change for the next analysis | Use a named, versioned pathway source; track which genes reach each model. |
+| D26 | Agree | Paired within each repeat; the repeats are not independent datasets. |
+| D27 | Keep the correlations; qualify the ceiling | Reliability holds only under strong assumptions; Ipatasertib's ceiling is unknown. |
+
+### What the code shows for the points the review asked to check
+
+- **D17.** The 80% detection filter and the medians are fitted on the
+  training rows of each fold (`overlap._protein_arrays`), and refitted on
+  each inner training split inside late fusion.
+- **D18.** The blend weight is chosen on inner out-of-fold predictions of
+  both halves. Lines without protein get the expression prediction, which
+  is why late fusion and expression only score the same on those lines.
+- **D11 and D15.** As recorded earlier today.
+
+Still open from the review: nesting the variance filter inside inner
+tuning (D11, D12), training-side convergence checks (D13), repeated
+shuffles (D15), null sensitivity and refitted adjustment (D21 to D23), a
+versioned pathway source (D25).
