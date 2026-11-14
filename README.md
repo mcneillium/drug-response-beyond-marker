@@ -3,6 +3,8 @@
 **Status:** all seven experiments have been run end to end on public data,
 and a clean re-run from a fresh clone reproduced every result table exactly
 (same kind of machine; see `LOG.md`). A first report is in `docs/report.md`.
+Every table was reproduced on a second machine (Windows, Python 3.14) on
+14 November 2026: see `results/reproduction_second_machine.md`.
 
 ## Question
 

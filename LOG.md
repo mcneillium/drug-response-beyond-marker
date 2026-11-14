@@ -251,3 +251,10 @@ not been read in full.
   permutations would give a null distribution. Recorded under D15 for Paul's
   decision.
 
+## 2026-11-14: reproduced on a second machine
+
+Paul re-ran all six scripts on his Windows machine (Python 3.14.7) from
+commit `220d425`. The downloaded data matched the manifest checksums. Every
+result table matched the published one to within 2e-6, and four were
+identical. Details: `results/reproduction_second_machine.md`.
+
