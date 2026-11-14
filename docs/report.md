@@ -77,7 +77,7 @@ to 0.161 against 0.156) at every level of overlap. Training only on complete
 cases, or filling gaps with medians, was worse, and collapsed when 25% of
 cell lines had protein.
 
-**The only stable subgroups are tissue.** Three clusters are perfectly stable
+**No stable subgroups beyond tissue were found with these methods.** Three clusters are perfectly stable
 as published (stability 1.00 against 0.68 for data with no groups), and 94%
 of cell lines sit in the commonest cluster of their own tissue. After
 removing tissue and centre, no clustering is both stable and clearly above

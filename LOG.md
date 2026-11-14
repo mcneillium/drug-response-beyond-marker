@@ -235,3 +235,19 @@ not been read in full.
 - The public history starts from a single commit. The earlier commits are
   kept privately.
 - Data licence terms were checked and recorded in `CITATION.md`.
+
+## 2026-11-14: corrections from a review of the logged choices
+
+- The report said "the only stable subgroups are tissue". That claims more
+  than one clustering method can show. It now says no stable subgroups beyond
+  tissue were found with these methods.
+- Gene selection by variance and the standardisation are fitted on each outer
+  training fold, and the elastic net then chooses its strength by inner
+  cross-validation on that matrix. The inner validation rows therefore helped
+  choose the 2,000 genes. This cannot leak the outer test fold, so the
+  held-out R² values stand, but the tuning is not fully nested. Recorded under
+  D11 for Paul's decision.
+- The leak demonstration uses one shuffle of the response. Repeated
+  permutations would give a null distribution. Recorded under D15 for Paul's
+  decision.
+
