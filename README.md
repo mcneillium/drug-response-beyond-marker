@@ -128,12 +128,14 @@ tests/                   54 tests on small hand-made data
 ## Status of this work
 
 Author: Paul McNeill. This is work in progress and has not been peer reviewed.
-`LOG.md` lists the 27 choices made during the unattended runs (D1 to D27),
-for me to confirm or change, and the mistakes found and fixed. As of
-13 November 2026 I have not yet re-run the study on my own machine or
-confirmed those choices.
+`LOG.md` lists the 27 choices made during the runs (D1 to D27) with my
+decision on each, and the mistakes found and fixed. I re-ran every experiment
+on my own machine on 14 November 2026 (`results/reproduction_second_machine.md`).
 
-<!-- TODO (Paul): restore a statement of how any AI tools were used before this goes to anyone else, and keep it accurate. -->
+### How this work was produced
+
+Both studies were built making the use of AI tools, under research rules I set; each study’s log records how. I re-ran both on my own hardware, reviewed every logged decision, and take responsibility for the work and its conclusions.
+
 
 ## Licence
 
