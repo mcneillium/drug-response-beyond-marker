@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "drbm"
+version = "0.1.0"
+description = "Drug response beyond a single marker: partially overlapping molecular data, stability and explanation"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+dependencies = [
+    "numpy",
+    "pandas>=3.0",
+    "pyarrow",
+    "openpyxl",
+    "scikit-learn",
+    "lightgbm>=4",
+    "scipy",
+    "joblib",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+analysis = ["matplotlib"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

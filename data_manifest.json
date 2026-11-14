@@ -1,0 +1,37 @@
+{
+ "GDSC1_fitted_dose_response_27Oct23.xlsx": {
+  "bytes": 29353210,
+  "sha256": "837b0686500fde75179e490de08f034abd9f882d8b0253d637bafe83e156dafd",
+  "url": "https://cog.sanger.ac.uk/cancerrxgene/GDSC_release8.5/GDSC1_fitted_dose_response_27Oct23.xlsx"
+ },
+ "GDSC2_fitted_dose_response_27Oct23.xlsx": {
+  "bytes": 21330376,
+  "sha256": "f950a7027be265f8a7a74220a27fd18cbd368485349bd8c2048e88bb1cd07560",
+  "url": "https://cog.sanger.ac.uk/cancerrxgene/GDSC_release8.5/GDSC2_fitted_dose_response_27Oct23.xlsx"
+ },
+ "Proteomics_20221214.zip": {
+  "bytes": 112671590,
+  "sha256": "354d5ff900bec77d99881c890f09694df17f7fdd6f280d6e6392794d9c6ee9ca",
+  "url": "https://cog.sanger.ac.uk/cmp/download/Proteomics_20221214.zip"
+ },
+ "cnv_summary_20230303.zip": {
+  "bytes": 8349216,
+  "sha256": "c3e848e5690998424271531b5a04d000b290d4695977cdb78972b7b0ff48e5f3",
+  "url": "https://cog.sanger.ac.uk/cmp/download/cnv_summary_20230303.zip"
+ },
+ "model_list_latest.csv.gz": {
+  "bytes": 145029,
+  "sha256": "333affaa690c9f7e517467a6f78b00ffb418cb8449e2eb1cc5d93d85f7b0862e",
+  "url": "https://cog.sanger.ac.uk/cmp/download/model_list_latest.csv.gz"
+ },
+ "mutations_summary_20230202.zip": {
+  "bytes": 303063,
+  "sha256": "8212454396cea0845953a879d3f1f6087f353a3069cd6464698cdd217bce4933",
+  "url": "https://cog.sanger.ac.uk/cmp/download/mutations_summary_20230202.zip"
+ },
+ "rnaseq_merged_20250117.zip": {
+  "bytes": 1209789644,
+  "sha256": "f155b4ef9514bf5dde9d9e701091ca2b4b2ab588b6137964265ae162db9f20ef",
+  "url": "https://cog.sanger.ac.uk/cmp/download/rnaseq_merged_20250117.zip"
+ }
+}

@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite it using the details below."
+type: software
+title: "Drug response beyond a single marker"
+authors:
+  - family-names: McNeill
+    given-names: Paul Martin
+    affiliation: "Queen's University Belfast"
+repository-code: "https://github.com/mcneillium/drug-response-beyond-marker"
+license: MIT
+version: 0.1.0
+abstract: >-
+  Code, protocol and results for a study of how much of the response to an AKT inhibitor wider molecular data explains beyond PTEN status in GDSC cancer cell lines, with a measured feature-selection leak and checks of cluster and explanation stability. Work in progress; not peer reviewed.

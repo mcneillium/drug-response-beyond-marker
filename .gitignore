@@ -1,0 +1,19 @@
+# Data is downloaded by `python -m drbm.download`, never committed
+data/
+# Large intermediate outputs that the scripts regenerate
+results/raw/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+build/
+dist/
+.venv/
+.vscode/
+.idea/
+# Private planning notes must never be published
+phd-portfolio-plan.md
+*portfolio-plan*.md
+# Personal study notes and working rules
+notes/

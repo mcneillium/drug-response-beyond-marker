@@ -1,0 +1,23 @@
+quantity,value
+number of fits,25
+boosting: mean Jaccard overlap of top-20 lists,0.19977734858408086
+boosting: features in the top 20 of at least 80% of fits,2
+boosting: features that reach any top-20 list,134
+features that are an input in every fit,1845
+features that are an input in at least one fit,2229
+elastic net: mean number of features selected per fit,54.36
+elastic net: mean Jaccard overlap of selected sets,0.32024758051966135
+elastic net: features selected in at least 80% of fits,19
+sanity check: PTEN_status,an input in 25/25 fits; SHAP rank 1 of 2229; in top 20 of 25/25 fits; selected by elastic net in 25/25
+sanity check: PTEN,"never an input: not among the 2,000 most variable genes in any fit"
+sanity check: AKT1,"never an input: not among the 2,000 most variable genes in any fit"
+sanity check: AKT2,"never an input: not among the 2,000 most variable genes in any fit"
+sanity check: AKT3,an input in 25/25 fits; SHAP rank 125 of 2229; in top 20 of 1/25 fits; selected by elastic net in 24/25
+sanity check: PIK3CA,"never an input: not among the 2,000 most variable genes in any fit"
+sanity check: PIK3CB,"never an input: not among the 2,000 most variable genes in any fit"
+sanity check: PIK3R1,"never an input: not among the 2,000 most variable genes in any fit"
+sanity check: MTOR,"never an input: not among the 2,000 most variable genes in any fit"
+sanity check: TSC1,"never an input: not among the 2,000 most variable genes in any fit"
+sanity check: TSC2,"never an input: not among the 2,000 most variable genes in any fit"
+sanity check: INPP4B,an input in 25/25 fits; SHAP rank 716 of 2229; in top 20 of 0/25 fits; selected by elastic net in 0/25
+sanity check: PDPK1,"never an input: not among the 2,000 most variable genes in any fit"
